@@ -21,7 +21,7 @@ const App = () => {
       }
       const data = await response.json()
       setDisney(data.data)
-    }catch(e){
+    }catch (error) {
       setError({ error: true, message: e.message})
     }
   }
