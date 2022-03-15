@@ -22,7 +22,7 @@ const App = () => {
       const data = await response.json()
       setDisney(data.data)
     }catch (error) {
-      setError({ error: true, message: e.message})
+      setError({ error: true, message: error.message})
     }
   }
   useEffect (()=>{
